@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ElevatorControl.iml" filepath="$PROJECT_DIR$/ElevatorControl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com-aspanu-elevator-control.iml" filepath="$PROJECT_DIR$/.idea/modules/com-aspanu-elevator-control.iml" />
     </modules>
   </component>
 </project>
