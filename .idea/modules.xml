@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com-aspanu-elevator-control.iml" filepath="$PROJECT_DIR$/.idea/modules/com-aspanu-elevator-control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com-aspanu-elevator-control_main.iml" filepath="$PROJECT_DIR$/.idea/modules/com-aspanu-elevator-control_main.iml" group="com-aspanu-elevator-control" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com-aspanu-elevator-control_test.iml" filepath="$PROJECT_DIR$/.idea/modules/com-aspanu-elevator-control_test.iml" group="com-aspanu-elevator-control" />
     </modules>
   </component>
 </project>
