@@ -9,9 +9,15 @@ import java.util.*
  */
 
 /**
- * An elevator containing its status and the information it needs to guide itself. Requests are
+ * An elevator containing its status and the information it needs to guide itself.
  */
 data class Elevator(val id: Int, var floor: Int, var direction: Direction, val stops: MutableList<Request> = mutableListOf(), var nextStop: Request) {
+
+    /**
+     * If the elevator is at a rest or the next stop is closer than the current next stop, we'll go there next,
+     * otherwise, queue it up. Note that we assume that the direction of this request is the same as our direction
+     * of movement
+     */
     fun add(request: Request) {
         if (direction == NONE || distance(request) < distance(nextStop)) {
             nextStop = request
@@ -133,7 +139,10 @@ class ElevatorController(numElevators: Int) {
             return false
         }
         // TODO: Add a check to see if this request can be accepted
-        elevators.elementAt(elevatorId).add(request)
+        val elevator = elevators.elementAt(elevatorId)
+        if (elevator.getDirectionForRequest(request) != elevator.direction) return false
+        elevator.add(request)
+        return true
     }
 
     /**
