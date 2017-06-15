@@ -33,6 +33,16 @@ Please provide a source tarball containing code in the language of your choice, 
 Good luck!
 
 
+To build:
+---
+- Open up the directory in a terminal window
+- Type in:
+```
+./gradlew build
+```
+- ???
+- Profit
+
 Solution discussion:
 ---
 
